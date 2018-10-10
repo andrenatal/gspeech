@@ -24,7 +24,7 @@ app.post('/asr', (req, res) => {
     content: req.body.toString('base64'),
   };
 
-  const lang = req.headers['accept-language'] != null ? req.headers['accept-language'] : "en-us";
+  const lang = req.headers['accept-language'] != null ? req.headers['accept-language'] : "pt-br";
   const config = {
     encoding: 'LINEAR16',
     sampleRateHertz: 16000,
