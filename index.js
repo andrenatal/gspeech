@@ -27,7 +27,7 @@ app.post('/asr', (req, res) => {
   const lang = req.headers['accept-language'] != null ? req.headers['accept-language'] : "pt-br";
   const config = {
     encoding: 'LINEAR16',
-    sampleRateHertz: 16000,
+    sampleRateHertz: 8000,
     languageCode: lang,
   };
 
